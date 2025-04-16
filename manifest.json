@@ -1,0 +1,9 @@
+{
+  "domain": "loggamera",
+  "name": "Loggamera",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "https://www.example.com",
+  "requirements": [],
+  "codeowners": ["@your-github-username"]
+}

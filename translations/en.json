@@ -1,0 +1,18 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Loggamera",
+        "description": "Enter your API Key and Device ID to connect.",
+        "data": {
+          "api_key": "API Key",
+          "device_id": "Device ID"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check your API Key and Device ID."
+    }
+  },
+  "title": "Loggamera"
+}
