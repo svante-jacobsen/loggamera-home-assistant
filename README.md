@@ -18,17 +18,7 @@ To use this integration, the following is required:
 
 ## Installation
 
-1. Copy the `loggamera/` folder into your `config/custom_components/` directory:
-
-```
-config/
-└── custom_components/
-    └── loggamera/
-        ├── __init__.py
-        ├── sensor.py
-        ├── manifest.json
-        └── const.py
-```
+1. Copy the `loggamera/` folder into your `config/custom_components/` directory.
 
 2. Restart Home Assistant.
 
@@ -44,22 +34,10 @@ You’ll need:
 
 These are provided by Loggamera and can be entered via the integration setup in the Home Assistant UI.
 
-## Update Interval
-
-The integration fetches new data every **15 minutes** using Home Assistant’s `DataUpdateCoordinator`.
-
 ## API Usage
 
 This integration uses the **PowerMeter** part of the Loggamera API, documented here:
 [https://documenter.getpostman.com/view/6665372/SzYexbZa](https://documenter.getpostman.com/view/6665372/SzYexbZa)
-
-It specifically queries:
-
-```
-POST https://platform.loggamera.se/api/v2/PowerMeter
-```
-
-…and expects a JSON payload with the API key and device ID.
 
 ## Sensors
 
@@ -83,4 +61,4 @@ MIT License
 
 ---
 
-Maintained with 💡 by [Your Name]
+Maintained with 💡 by Svante Jacobsen
