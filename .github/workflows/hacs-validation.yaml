@@ -14,5 +14,5 @@ jobs:
       - run: cat hacs.json
       - uses: hacs/action@main
         with:
-          repository: svante-jacobsen/loggamera
+          repository: svante-jacobsen/loggamera-home-assistant
           category: integration
