@@ -1,12 +1,6 @@
 {
   "name": "Loggamera",
-  "domain": "loggamera",
-  "documentation": "https://github.com/svante-jacobsen/loggamera/blob/main/README.md",
-  "requirements": [],
-  "codeowners": ["@svante-jacobsen"],
-  "version": "0.0.2",
-  "config_flow": false,
-  "iot_class": "cloud_polling",
-  "category": "integration",
-  "homeassistant": "2023.7.0"
+  "description": "Home Assistant integration for Loggamera power meters",
+  "categories": ["integration"],
+  "keywords": ["energy", "power", "meter", "loggamera"]
 }
