@@ -7,5 +7,6 @@
   "issue_tracker": "https://github.com/svante-jacobsen/loggamera-home-assistant/issues",
   "requirements": [],
   "iot_class": "cloud_polling",
-  "codeowners": ["@svante-jacobsen"]
+  "codeowners": ["@svante-jacobsen"],
+  "icon": "mdi:power-plug"
 }
