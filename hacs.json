@@ -1,6 +1,9 @@
 {
   "name": "Loggamera",
-  "description": "Home Assistant integration for Loggamera power meters",
-  "categories": ["integration"],
-  "keywords": ["energy", "power", "meter", "loggamera"]
+  "category": "integration",
+  "content_in_root": false,
+  "domain": "loggamera",
+  "country": "SE",
+  "homeassistant": "2023.7.0",
+  "render_readme": true
 }
