@@ -1,7 +1,6 @@
 {
   "domain": "loggamera",
   "name": "Loggamera",
-  "version": "1.0.0",
   "config_flow": true,
   "documentation": "https://github.com/svante-jacobsen/loggamera-home-assistant#readme",
   "requirements": [],
