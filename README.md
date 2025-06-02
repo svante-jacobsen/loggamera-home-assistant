@@ -5,7 +5,6 @@ A custom integration for Home Assistant that connects to the [Loggamera](https:/
 ## Features
 
 - Fetches accumulated energy consumption (in kWh) every 15 minutes.
-- Calculates deltas (consumption between updates).
 - Fully compatible with Home Assistant’s Energy Dashboard via the `total_increasing` state class.
 
 ## Requirements
@@ -43,8 +42,7 @@ This integration uses the **PowerMeter** part of the Loggamera API, documented h
 
 | Sensor Name                        | Description                                 |
 |-----------------------------------|---------------------------------------------|
-| `sensor.loggamera_consumption_accumulated` | Total energy consumed in kWh (accumulated). |
-| `sensor.loggamera_consumption`    | Delta energy consumed since last update.    |
+| `sensor.loggamera_consumption`    | Total energy consumed in kWh (accumulated). |
 
 ## Development
 
