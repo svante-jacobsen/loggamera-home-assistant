@@ -5,5 +5,5 @@
   "config_flow": true,
   "documentation": "https://www.example.com",
   "requirements": [],
-  "codeowners": ["@your-github-username"]
+  "codeowners": ["@svante-jacobsen"]
 }
