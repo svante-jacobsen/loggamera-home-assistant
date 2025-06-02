@@ -1,7 +1,5 @@
 {
   "name": "Loggamera",
-  "domain": "loggamera",
-  "category": "integration",
   "content_in_root": false,
   "country": "SE",
   "homeassistant": "2023.7.0",
