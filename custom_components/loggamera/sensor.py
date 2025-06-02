@@ -22,7 +22,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
 
     entities = [
         LoggameraAccumulatedSensor(coordinator, entry.entry_id),
-        LoggameraDeltaSensor(coordinator, entry.entry_id, hass),
     ]
     async_add_entities(entities)
 
@@ -66,7 +65,7 @@ class LoggameraAccumulatedSensor(CoordinatorEntity, SensorEntity):
     def __init__(self, coordinator, entry_id):
         super().__init__(coordinator)
         self._attr_unique_id = f"loggamera_consumption_accumulated_{entry_id}"
-        self._attr_name = "Loggamera Consumption Accumulated"
+        self._attr_name = "Loggamera Consumption"
         self._attr_native_unit_of_measurement = "kWh"
         self._attr_device_class = SensorDeviceClass.ENERGY
         self._attr_state_class = SensorStateClass.TOTAL_INCREASING
@@ -74,31 +73,3 @@ class LoggameraAccumulatedSensor(CoordinatorEntity, SensorEntity):
     @property
     def native_value(self):
         return self.coordinator.data.get("total_kwh")
-
-class LoggameraDeltaSensor(CoordinatorEntity, SensorEntity):
-    def __init__(self, coordinator, entry_id, hass: HomeAssistant):
-        super().__init__(coordinator)
-        self.hass = hass
-        self._attr_unique_id = f"loggamera_consumption_{entry_id}"
-        self._attr_name = "Loggamera Consumption"
-        self._attr_native_unit_of_measurement = "kWh"
-        self._attr_state_class = SensorStateClass.MEASUREMENT
-
-    @property
-    def native_value(self):
-        current = self.coordinator.data.get("total_kwh")
-        last_state = self.hass.states.get(self.entity_id)
-        if last_state and last_state.state not in (None, "", "unknown", "unavailable"):
-            try:
-                previous_total = float(last_state.attributes.get("last_total", 0))
-                delta = current - previous_total
-                return round(delta, 3)
-            except Exception:
-                return 0.0
-        return 0.0
-
-    @property
-    def extra_state_attributes(self):
-        return {
-            "last_total": self.coordinator.data.get("total_kwh")
-        }
