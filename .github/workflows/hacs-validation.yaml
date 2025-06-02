@@ -11,4 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: ls -la  # debug
+      - run: cat hacs.json
       - uses: hacs/action@main
