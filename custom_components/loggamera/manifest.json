@@ -9,6 +9,5 @@
   "requirements": [],
   "config_flow": true,
   "issue_tracker": "https://github.com/svante-jacobsen/loggamera-home-assistant/issues",
-  "icon": "mdi:power-plug",
   "version": "1.0.0"
 }
