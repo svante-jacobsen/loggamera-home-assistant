@@ -1,17 +1,19 @@
-name: HACS Validation
+name: Validate
 
 on:
   push:
-    tags:
-      - 'v*'
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
-  validate:
-    runs-on: ubuntu-latest
+  validate-hacs:
+    runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v3
-      - uses: hacs/action@main
+      - name: HACS validation
+        uses: "hacs/action@main"
         with:
-          repository: svante-jacobsen/loggamera-home-assistant
-          category: integration
+          category: "CHANGE_ME!"
