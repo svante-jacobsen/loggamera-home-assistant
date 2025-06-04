@@ -66,3 +66,4 @@ MIT License
 ---
 
 Maintained with 💡 by Svante Jacobsen
+https://my.home-assistant.io/redirect/hacs_repository/?owner=svante-jacobsen&repository=loggamera-home-assistant&category=integration
