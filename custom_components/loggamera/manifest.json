@@ -2,12 +2,12 @@
   "domain": "loggamera",
   "name": "Loggamera",
   "codeowners": ["@svante-jacobsen"],
+  "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/svante-jacobsen/loggamera-home-assistant#readme",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "requirements": [],
-  "config_flow": true,
   "issue_tracker": "https://github.com/svante-jacobsen/loggamera-home-assistant/issues",
+  "requirements": [],
   "version": "1.0.0"
 }
