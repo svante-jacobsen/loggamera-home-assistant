@@ -17,13 +17,19 @@ To use this integration, the following is required:
 
 ## Installation
 
+### HACS Installation
+
+1. Open **HACS** in Home Assistant.
+2. Go to **Integrations** and click the `+` button.
+3. Search for **Loggamera** and install it.
+4. Restart Home Assistant.
+
+### Manual Installation
+
 1. Copy the `loggamera/` folder into your `config/custom_components/` directory.
-
 2. Restart Home Assistant.
-
-3. Add the integration via the UI:
-   - Go to **Settings > Devices & Services > Add Integration**.
-   - Search for **Loggamera** and follow the setup flow.
+3. In Home Assistant, go to **Settings > Devices & Services > Add Integration**.
+4. Search for **Loggamera** and follow the setup flow.
 
 ## Configuration
 
@@ -31,7 +37,7 @@ You’ll need:
 - Your **API Key** from Loggamera.
 - Your **Device ID**.
 
-These are provided by Loggamera and can be entered via the integration setup in the Home Assistant UI.
+These are provided by Loggamera and can be entered via the integration setup UI.
 
 ## API Usage
 
