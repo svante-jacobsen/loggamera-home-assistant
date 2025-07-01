@@ -1,5 +1,7 @@
 # Loggamera Home Assistant Integration
 
+[![HACS](https://img.shields.io/badge/HACS-Default-orange.svg?logo=HomeAssistantCommunityStore&logoColor=white)](https://github.com/hacs/default)
+
 A custom integration for Home Assistant that connects to the [Loggamera](https://loggamera.se/) API to fetch energy consumption data from a Loggamera-connected power meter.
 
 ## Features
