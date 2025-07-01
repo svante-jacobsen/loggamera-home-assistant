@@ -1,6 +1,6 @@
 # Loggamera Home Assistant Integration
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=flat-square)](https://hacs.xyz/docs/publish/start) [![GitHub release](https://img.shields.io/github/v/release/svante-jacobsen/loggamera-home-assistant?style=flat-square)](https://github.com/svante-jacobsen/loggamera-home-assistant/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg?logo=HomeAssistantCommunityStore&logoColor=white)](https://github.com/hacs/integration) [![GitHub release](https://img.shields.io/github/v/release/svante-jacobsen/loggamera-home-assistant?style=flat-square)](https://github.com/svante-jacobsen/loggamera-home-assistant/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 
 A custom integration for Home Assistant that connects to the [Loggamera](https://loggamera.se/) API to fetch energy consumption data from a Loggamera-connected power meter.
