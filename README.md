@@ -5,6 +5,10 @@
 
 A custom integration for Home Assistant that connects to the [Loggamera](https://loggamera.se/) API to fetch energy consumption data from a Loggamera-connected power meter.
 
+
+## About this integration
+This **Home Assistant integration for Loggamera** allows users to automatically fetch power data from their Loggamera-connected meters and display it in Home Assistant’s Energy Dashboard, providing seamless monitoring of energy consumption.
+
 ## Features
 
 - Fetches accumulated energy consumption (in kWh) every 15 minutes.
