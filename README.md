@@ -46,6 +46,10 @@ You’ll need:
 
 These are provided by Loggamera and can be entered via the integration setup UI.
 
+## Screenshot
+
+<img width="1184" height="436" alt="Screenshot 2026-03-16 163510" src="https://github.com/user-attachments/assets/c7f7b888-07c3-4cb1-99b8-82eda682e494" />
+
 ## API Usage
 
 This integration uses the **PowerMeter** part of the Loggamera API, documented here:
